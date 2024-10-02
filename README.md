@@ -25,7 +25,7 @@ Styled the app for better user interaction with clear visual feedback.
 
  # How to Run
 
-Clone the repo: git clone https://github.com/Jocatins/pokemon-search.git
+Clone the repo: git clone https://github.com/Jocatins/pokemon-subvisual.git
 
 Install dependencies: npm install
 
