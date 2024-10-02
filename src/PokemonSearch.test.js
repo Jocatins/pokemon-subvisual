@@ -22,7 +22,7 @@ describe("PokemonSearch", () => {
 
     render(<PokemonSearch />);
 
-    const input = screen.getByPlaceholderText("Enter Pokémon Name or Partial Name");
+    const input = screen.getByPlaceholderText("Enter Pokemon Name or Partial Name");
     fireEvent.change(input, { target: { value: "pikachu" } });
 
     const searchButton = screen.getByText("Search");
@@ -37,13 +37,13 @@ describe("PokemonSearch", () => {
 
     render(<PokemonSearch />);
 
-    const input = screen.getByPlaceholderText("Enter Pokémon Name or Partial Name");
+    const input = screen.getByPlaceholderText("Enter Pokemon Name or Partial Name");
     fireEvent.change(input, { target: { value: "invalidpokemon" } });
 
     const searchButton = screen.getByText("Search");
     fireEvent.click(searchButton);
 
-    const errorElement = await screen.findByText(/Pokémon not found/i);
+    const errorElement = await screen.findByText(/Pokemon not found/i);
     expect(errorElement).toBeInTheDocument();
   });
 });

@@ -8,18 +8,18 @@ const PokemonSearch = () => {
   const [pokemonName, setPokemonName] = useState("");
   const [pokemonData, setPokemonData] = useState(null);
   const [error, setError] = useState(null);
-  const [cache, setCache] = useState({});  // For caching previously searched Pokémon
-  const [pokemonList, setPokemonList] = useState([]); // List of all Pokémon for partial name search
+  const [cache, setCache] = useState({});  // For caching previously searched Pokemon
+  const [pokemonList, setPokemonList] = useState([]); // List of all Pokemon for partial name search
 
   useEffect(() => {
-    // Fetch the complete list of Pokémon for partial search
+    // Fetch the complete list of Pokemon for partial search
     const fetchPokemonList = async () => {
       try {
         const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10000");
         console.log(response.data.results);
         setPokemonList(response.data.results);
       } catch (err) {
-        console.error("Error fetching Pokémon list");
+        console.error("Error fetching Pokemon list");
       }
     };
     fetchPokemonList();
@@ -29,7 +29,7 @@ const PokemonSearch = () => {
     let match = pokemonList.find(pokemon => pokemon.name.includes(pokemonName.toLowerCase()));
     
     if (!match) {
-      setError("Pokémon not found");
+      setError("Pokemon not found");
       setPokemonData(null);
       return;
     }
@@ -45,7 +45,7 @@ const PokemonSearch = () => {
         setPokemonData(response.data);
         setError(null);
       } catch (err) {
-        setError("Pokémon not found");
+        setError("Pokemon not found");
         setPokemonData(null);
       }
     }
@@ -64,7 +64,7 @@ const PokemonSearch = () => {
           setPokemonData(response.data);
           setError(null);
         } catch (err) {
-          setError("Pokémon not found");
+          setError("Pokemon not found");
         }
       }
     }
@@ -83,7 +83,7 @@ const PokemonSearch = () => {
           setPokemonData(response.data);
           setError(null);
         } catch (err) {
-          setError("Pokémon not found");
+          setError("Pokemon not found");
         }
       }
     }
@@ -97,7 +97,7 @@ const PokemonSearch = () => {
         type="text"
         value={pokemonName}
         onChange={(e) => setPokemonName(e.target.value)}
-        placeholder="Enter Pokémon Name or Partial Name"
+        placeholder="Enter Pokemon Name or Partial Name"
       />
       <button className="search-button" onClick={searchPokemon}>Search</button>
 
