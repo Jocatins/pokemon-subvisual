@@ -4,8 +4,6 @@ import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 
-// Import the CSS file
-
 const PokemonSearch = () => {
   const [pokemonName, setPokemonName] = useState("");
   const [pokemonData, setPokemonData] = useState(null);
@@ -18,6 +16,7 @@ const PokemonSearch = () => {
     const fetchPokemonList = async () => {
       try {
         const response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=10000");
+        console.log(response.data.results);
         setPokemonList(response.data.results);
       } catch (err) {
         console.error("Error fetching Pokémon list");

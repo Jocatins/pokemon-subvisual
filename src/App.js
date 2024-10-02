@@ -1,5 +1,4 @@
 import PokemonSearch from './PokemonSearch';
-// src/App.js
 import React from 'react';
 
 function App() {
