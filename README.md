@@ -1,15 +1,15 @@
  
- # Pokémon Search App
-A simple Pokémon search app built with React, allowing users to search for Pokémon by name or partial name, navigate between Pokémon using "Previous" and "Next" buttons, and cache results to reduce API calls.
+ # Pokemon Search App
+A simple Pokemon search app built with React, allowing users to search for Pokemon by name or partial name, navigate between Pokemon using "Previous" and "Next" buttons, and cache results to reduce API calls.
 
  - Key Features
-Search by Name: Search for a Pokémon using a full or partial name.
+Search by Name: Search for a Pokemon using a full or partial name.
 
-Previous/Next Navigation: Navigate through Pokémon based on their IDs.
+Previous/Next Navigation: Navigate through Pokemon based on their IDs.
 
-Error Handling: Displays an error message if the Pokémon is not found.
+Error Handling: Displays an error message if the Pokemon is not found.
 
-Caching: Previously searched Pokémon data is cached to minimize redundant API requests.
+Caching: Previously searched Pokemon data is cached to minimize redundant API requests.
 
 Styled UI: The app is styled for a clean and responsive user experience.
 
