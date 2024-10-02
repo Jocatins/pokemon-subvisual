@@ -4,7 +4,8 @@ import PokemonSearch from "./PokemonSearch";
 import React from "react";
 import axios from "axios";
 
-jest.mock("axios");
+// Mock Axios
+axios.get = jest.fn();
 
 describe("PokemonSearch", () => {
   test("Searches and displays a Pokémon", async () => {
@@ -15,6 +16,8 @@ describe("PokemonSearch", () => {
         sprites: { front_default: "pikachu_sprite_url" },
       },
     };
+
+    // Mock Axios response
     axios.get.mockResolvedValueOnce(mockResponse);
 
     render(<PokemonSearch />);

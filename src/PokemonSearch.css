@@ -1,4 +1,4 @@
-/* Center the main container and add spacing */
+
 .pokemon-search-container {
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Styling the input field */
+
   .pokemon-input {
     width: 100%;
     padding: 10px;
@@ -26,7 +26,7 @@
     border-color: #2c82c9;
   }
   
-  /* Styling the search button */
+
   .search-button {
     background-color: #4a90e2;
     color: white;
@@ -42,14 +42,12 @@
     background-color: #2c82c9;
   }
   
-  /* Error message styling */
   .error-message {
     color: red;
     font-size: 14px;
     margin-bottom: 10px;
   }
   
-  /* Pokémon details */
   .pokemon-details {
     text-align: center;
     margin-top: 20px;
@@ -60,7 +58,7 @@
     height: auto;
   }
   
-  /* Previous/Next button styling */
+
   .navigation-button {
     background-color: #f0f4f8;
     color: #4a90e2;
