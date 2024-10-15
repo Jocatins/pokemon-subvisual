@@ -1,32 +1,11 @@
- 
- # Pokemon Search App
-A simple Pokemon search app built with React, allowing users to search for Pokemon by name or partial name, navigate between Pokemon using "Previous" and "Next" buttons, and cache results to reduce API calls.
+# Dashboard Project
 
- - Key Features
-Search by Name: Search for a Pokemon using a full or partial name.
+This project is a responsive dashboard interface built with Tailwind CSS. The dashboard offers a clean and modern UI design that is easy to customize, with a focus on accessibility and responsiveness for various screen sizes.
 
-Previous/Next Navigation: Navigate through Pokemon based on their IDs.
+# Features
 
-Error Handling: Displays an error message if the Pokemon is not found.
+- Responsive Design: Adapts seamlessly to different screen sizes, providing an optimal viewing experience on desktop, tablet, and mobile devices.
 
-Caching: Previously searched Pokemon data is cached to minimize redundant API requests.
+- Customizable Components: Easily modifiable components like cards, tables, and navigation menus, tailored for dashboard functionality.
 
-Styled UI: The app is styled for a clean and responsive user experience.
-
-# Decisions Made
-
-Implemented caching to optimize performance.
-
-Added partial name search for flexibility.
-
-Used Axios for making API calls and handling errors.
-
-Styled the app for better user interaction with clear visual feedback.
-
- # How to Run
-
-Clone the repo: git clone https://github.com/Jocatins/pokemon-subvisual.git
-
-Install dependencies: npm install
-
-- Start the app: npm start
+- Utility-First Styling: Powered by Tailwind CSS, enabling rapid UI development with utility classes for margin, padding, colors, and more.
